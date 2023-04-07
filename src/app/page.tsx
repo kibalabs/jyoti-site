@@ -1,7 +1,7 @@
-import { Courgette } from 'next/font/google'
+import { Noto_Serif_Khojki } from 'next/font/google'
 
-const titleFont = Courgette({ subsets: ['latin'], weight: ['400'], fallback: ['cursive'] });
-const mainFont = Courgette({ subsets: ['latin'], weight: ['400'], fallback: ['cursive'] });
+const titleFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
+const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
 
 export default function Home() {
   return (

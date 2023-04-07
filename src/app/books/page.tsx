@@ -1,7 +1,7 @@
-import { Courgette, Inter } from 'next/font/google'
+import { Noto_Serif_Khojki } from 'next/font/google'
 
-const titleFont = Courgette({ subsets: ['latin'], weight: ['400'], fallback: ['cursive'] });
-const mainFont = Inter({ subsets: ['latin'], fallback: ['system-ui'] });
+const titleFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
+const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
 
 export default function Books() {
   return (
@@ -25,19 +25,19 @@ export default function Books() {
           <a className={`${mainFont.className} mt-8 text-xl text-yellow-600`} href='https://www.penguin.co.uk/books/448416/the-things-that-we-lost-by-patel-jyoti/9781529119442'>Ebook</a>
           <a className={`${mainFont.className} mt-8 text-xl text-yellow-600`} href='https://www.penguin.co.uk/books/448416/the-things-that-we-lost-by-patel-jyoti/9781529906912'>Audiobook</a>
           <p className={`${mainFont.className} mt-4 text-xl`}></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘This is a big book, full of assured and affecting writing.‘ <em>The Guardian</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘One of the best books I&apos;ve read this year.‘ <em>gal-dem</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘A delicate and empathic debut.’ <em>The Observer</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘Feted as one of the debut writers of the year.’ <em>Stylist</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘A thoughtful meditation on family, grief and the lengths we‘ll go to protect the ones we love.‘ <em>Good Housekeeping</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘A deftly assured debut novel about a fractured family and how words left unspoken can be more devastating than the truth.‘ <em>Red Magazine</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘A deeply reflective, searching depiction of grief.’ <em>The Times Literary Supplement</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘Highly recommended.’ <em>Huffington Post</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘An assured debut from a vital new voice. About family, grief and belonging, Patel weaves an intricate story that will stay with you.‘<em> Nikesh Shukla.</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘Immeasurably moving, a poignant and touching story about love and family bonds, and an especially tender portrait of a mother and son.’ <em>Huma Qureshi</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘Brilliant.‘ <em>Candice Brathwaite</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘Incredibly moving, this is an immersive novel focusing on grief but also love and relationships. I fell in love with Avani and Nik, characters so real I could hardly believe they&apos;re fictional. Jyoti Patel is a hugely exciting new writer.‘  <em>Louise Hare</em></p>
-          <p className={`${mainFont.className} mt-4 text-xl`}>‘This is a captivating, deeply moving book written with eloquence and beauty. It left me wanting to read more of Jyoti&apos;s words. An exciting new talent.’ <em>Mohsin Zaidi</em></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘This is a big book, full of assured and affecting writing.’<br /><span className={`text-slate-300`}>The Guardian</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘One of the best books I&apos;ve read this year.’<br /><span className={`text-slate-300`}>gal-dem</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘A delicate and empathic debut.’ <br /><span className={`text-slate-300`}>The Observer</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘Feted as one of the debut writers of the year.’ <br /><span className={`text-slate-300`}>Stylist</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘A thoughtful meditation on family, grief and the lengths we‘ll go to protect the ones we love.’<br /><span className={`text-slate-300`}>Good Housekeeping</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘A deftly assured debut novel about a fractured family and how words left unspoken can be more devastating than the truth.’<br /><span className={`text-slate-300`}>Red Magazine</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘A deeply reflective, searching depiction of grief.’ <br /><span className={`text-slate-300`}>The Times Literary Supplement</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘Highly recommended.’ <br /><span className={`text-slate-300`}>Huffington Post</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘An assured debut from a vital new voice. About family, grief and belonging, Patel weaves an intricate story that will stay with you.‘<span className={`text-slate-300`}> Nikesh Shukla.</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘Immeasurably moving, a poignant and touching story about love and family bonds, and an especially tender portrait of a mother and son.’ <br /><span className={`text-slate-300`}>Huma Qureshi</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘Brilliant.’<br /><span className={`text-slate-300`}>Candice Brathwaite</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘Incredibly moving, this is an immersive novel focusing on grief but also love and relationships. I fell in love with Avani and Nik, characters so real I could hardly believe they&apos;re fictional. Jyoti Patel is a hugely exciting new writer.’<br /> <span className={`text-slate-300`}>Louise Hare</span></p>
+          <p className={`${mainFont.className} mt-4 text-xl`}>‘This is a captivating, deeply moving book written with eloquence and beauty. It left me wanting to read more of Jyoti&apos;s words. An exciting new talent.’ <br /><span className={`text-slate-300`}>Mohsin Zaidi</span></p>
           <div className={`${mainFont.className} mb-8 lg:mb-20`}></div>
         </div>
         <div className='grow'></div>
