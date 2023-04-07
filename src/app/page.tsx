@@ -10,7 +10,7 @@ export default function Home() {
         <div className="grow"></div>
         <div className="mt-16 lg:mt-0 relative flex flex-col place-items-center text-center">
           <h1 className={`${titleFont.className} text-6xl lg:text-7xl font-bold`}>Jyoti Patel</h1>
-          <p className={`${mainFont.className} mt-6 lg:mt-8 mb-4 text-xl`}>Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.</p>
+          <p className={`${mainFont.className} mt-6 lg:mt-8 mb-4 text-xl`}>Author of the prize-winning novel &quot;The Things That We Lost&quot;, published by #Merky Books.</p>
         </div>
         <div className='grow'></div>
         <div className="mt-4 md:mt-0 grid grid-cols-1 md:grid-cols-5 text-center justify-center">
