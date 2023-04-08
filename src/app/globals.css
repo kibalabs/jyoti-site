@@ -31,3 +31,11 @@ body {
     display: inline-flex !important;
   }
 }
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 1.5s;
+}
+
+:root {
+  --animate-delay: 0.5s;
+}

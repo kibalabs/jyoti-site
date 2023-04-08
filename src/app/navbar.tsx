@@ -27,37 +27,37 @@ export default function NavBar() {
         <div className="flex flex-col lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start lg:h-auto">
           <a
             href="/"
-            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:border-slate-700 hover:bg-slate-800/30`}
+            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:text-slate-700`}
           >
             <span>Home</span>
           </a>
           <a
             href="/about"
-            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:border-orange-700 hover:bg-orange-800/30`}
+            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:text-orange-700`}
           >
             <span>About</span>
           </a>
           <a
             href="/books"
-            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:border-amber-700 hover:bg-amber-800/30`}
+            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:text-amber-700`}
           >
             <span>Books</span>
           </a>
           <a
             href="/press"
-            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:border-yellow-700 hover:bg-yellow-800/30`}
+            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:text-yellow-700`}
           >
             <span>Press</span>
           </a>
           <a
             href="/events"
-            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:border-teal-700 hover:bg-teal-800/30`}
+            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:text-teal-700`}
           >
             <span>Events</span>
           </a>
           <a
             href="/contact"
-            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:border-sky-700 hover:bg-sky-800/30`}
+            className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors hover:text-sky-700`}
           >
             <span>Contact</span>
           </a>
