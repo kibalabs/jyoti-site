@@ -19,7 +19,7 @@ export default function NavBar() {
   return (
     <nav className="flex items-center p-3 flex-wrap backdrop-blur-3xl" style={{backgroundColor: 'rgba(0, 0, 0, 0.7'}}>
       <a href="/" className="p-2 mr-4 inline-flex items-center">
-        <Image src='/favicon.png' alt='jyoti patel' className={`mr-4 rounded`} width='100' height='100' style={{maxHeight: '2em', maxWidth: '2em', objectFit: 'contain' }} />
+        <Image src='/icon.png' alt='jyoti patel' className={`mr-4 rounded`} width='100' height='100' style={{maxHeight: '2em', maxWidth: '2em', objectFit: 'contain' }} />
         <span className={`${mainFont.className} text-xl text-white font-bold tracking-wide`}>Jyoti Patel</span>
       </a>
       <button

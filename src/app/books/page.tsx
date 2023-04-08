@@ -8,6 +8,23 @@ import 'animate.css';
 const titleFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
 const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
 
+export const metadata = {
+  title: 'Jyoti Patel | Books',
+  description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+  openGraph: {
+    title: 'Jyoti Patel | Books',
+    description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: 'Jyoti Patel | Books',
+    description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+    site: "@Jyoti__Patel",
+    images: {
+      url: 'https://jyoti-site.vercel.app/icon.png',
+    },
+  },
+};
 export default function Books() {
   return (
     <div className="w-screen h-screen bg-[url('/books.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">

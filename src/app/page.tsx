@@ -1,28 +1,31 @@
 import { Noto_Serif_Khojki } from 'next/font/google'
-import Head from 'next/head';
 import Footer from './footer';
 import 'animate.css';
 
 const titleFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
 const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
 
+export const metadata = {
+  title: 'Jyoti Patel',
+  description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+  openGraph: {
+    title: 'Jyoti Patel',
+    description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: 'Jyoti Patel',
+    description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+    site: "@Jyoti__Patel",
+    images: {
+      url: 'https://jyoti-site.vercel.app/icon.png',
+    },
+  },
+}
+
 export default function Home() {
   return (
     <div className="w-screen h-screen bg-[url('/home.jpg')] lg:bg-[url('/home-large.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <title>Jyoti Patel</title>
-        <meta name="description" content={'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.'} />
-        <meta property="og:title" content={'Jyoti Patel'} />
-        <meta property="og:description" content={'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.'} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@Jyoti__Patel" />
-        <meta name="twitter:title" content="Jyoti Patel" />
-        <meta name="twitter:description" content='Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.' />
-        <meta name="twitter:image" content="https://jyoti-site.vercel.app/favicon.png" />
-        <link rel="shortcut icon" href="/favicon.png" />
-      </Head>
       <main className="flex flex-col min-h-screen items-center justify-between px-8 sm:px-24 backdrop-brightness-50 grow">
         <div className="grow"></div>
         <div className="mt-16 lg:mt-0 relative flex flex-col place-items-center text-center">
