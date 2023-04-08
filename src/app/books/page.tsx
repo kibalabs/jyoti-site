@@ -38,7 +38,14 @@ export default function Books() {
       />
       <main className="flex min-h-screen flex-col items-center justify-between backdrop-blur-3xl backdrop-brightness-50">
         <div className="mt-16 mx-16 relative flex flex-col place-items-center text-center max-w-4xl">
-          <h1 className={`${titleFont.className} text-4xl font-bold mb-8`}>The Things That We Lost</h1>
+          <h1 className={`${titleFont.className} text-4xl font-bold mb-4`}>The Things That We Lost</h1>
+          <div className={`flex flex-row mb-6 lg:mb-8`} style={{width: '25em', height: '0.1em'}}>
+            <div className='w-1/5 h-full bg-sky-500 mx-1' />
+            <div className='w-1/5 h-full bg-teal-500 mx-1' />
+            <div className='w-1/5 h-full bg-yellow-500 mx-1' />
+            <div className='w-1/5 h-full bg-amber-500 mx-1' />
+            <div className='w-1/5 h-full bg-orange-500 mx-1' />
+          </div>
           <div className="grow"></div>
           <p className={`${mainFont.className} mt-4 text-xl font-bold`}>An Observer Best Debut Novel of 2023</p>
           <p className={`${mainFont.className} mt-1 text-xl font-bold`}>Winner of the #Merky Books New Writers’ Prize</p>
