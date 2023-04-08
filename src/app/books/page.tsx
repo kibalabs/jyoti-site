@@ -29,16 +29,16 @@ export default function Books() {
   return (
     <div className="w-screen h-screen bg-[url('/books.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
       <NavBar />
+      <Image
+        src="/books-banner.jpg"
+        alt="Jyoti Patel"
+        width={1000}
+        height={400}
+        style={{objectFit: 'cover', width: '100%', maxHeight: '50vh', objectPosition: '100% 0%'}}
+      />
       <main className="flex min-h-screen flex-col items-center justify-between backdrop-blur-3xl backdrop-brightness-50">
         <div className="mt-16 mx-16 relative flex flex-col place-items-center text-center max-w-4xl">
           <h1 className={`${titleFont.className} text-4xl font-bold mb-8`}>The Things That We Lost</h1>
-          <Image
-            src="/books-banner.jpg"
-            alt="Jyoti Patel"
-            width={1000}
-            height={400}
-            style={{objectFit: 'contain', width: '100%'}}
-          />
           <div className="grow"></div>
           <p className={`${mainFont.className} mt-4 text-xl font-bold`}>An Observer Best Debut Novel of 2023</p>
           <p className={`${mainFont.className} mt-1 text-xl font-bold`}>Winner of the #Merky Books New Writers’ Prize</p>
