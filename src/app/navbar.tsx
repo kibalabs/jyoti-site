@@ -8,9 +8,14 @@ const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui']
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState<boolean>(false);
+  const [path, setPath] = React.useState<string | null>(null);
 
-  const path = typeof window !== 'undefined' ? window.location.pathname : null;
-  console.log('path', path);
+  React.useEffect((): void => {
+    const newPath = typeof window !== 'undefined' ? window.location.pathname : null;
+    console.log('newPath', newPath);
+    setPath(newPath);
+  }, []);
+
   return (
     <nav className="flex items-center p-3 flex-wrap backdrop-blur-3xl" style={{backgroundColor: 'rgba(0, 0, 0, 0.7'}}>
       <a href="/" className="p-2 mr-4 inline-flex items-center">
