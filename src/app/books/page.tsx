@@ -6,7 +6,7 @@ const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui']
 export default function Books() {
   return (
     <div className="w-screen h-screen bg-[url('/books.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
-      <main className="flex min-h-screen flex-col items-center justify-between backdrop-blur-3xl backdrop-brightness-50 grow">
+      <main className="flex min-h-screen flex-col items-center justify-between backdrop-blur-3xl backdrop-brightness-50g">
         <a className={`${mainFont.className} mt-8 mb-4`} href='/'>Home</a>
         <div className="mt-16 relative flex flex-col place-items-center text-center max-w-4xl">
           <h1 className={`${titleFont.className} text-5xl font-bold mb-8 lg:mb-12`}>Jyoti Patel&apos;s Books</h1>
