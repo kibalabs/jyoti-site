@@ -14,8 +14,7 @@ export default function Books() {
       <NavBar />
       <main className="flex min-h-screen flex-col items-center justify-between backdrop-blur-3xl backdrop-brightness-50">
         <div className="mt-16 mx-16 relative flex flex-col place-items-center text-center max-w-4xl">
-          <h1 className={`${titleFont.className} text-5xl font-bold mb-8 lg:mb-12`}>Jyoti Patel&apos;s Books</h1>
-          <h2 className={`${titleFont.className} text-3xl font-bold mb-8 lg:mb-12`}>The Things That We Lost</h2>
+          <h1 className={`${titleFont.className} text-4xl font-bold mb-8`}>The Things That We Lost</h1>
           <Image
             src="/books-banner.jpg"
             alt="Jyoti Patel"
