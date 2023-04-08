@@ -1,5 +1,6 @@
 import { Noto_Serif_Khojki } from 'next/font/google'
 import Head from 'next/head';
+import Footer from './footer';
 import 'animate.css';
 
 const titleFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
@@ -7,7 +8,7 @@ const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui']
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen bg-[url('/home.jpg')] md:bg-[url('/home-large.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
+    <div className="w-screen h-screen bg-[url('/home.jpg')] lg:bg-[url('/home-large.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
@@ -22,45 +23,45 @@ export default function Home() {
         <meta name="twitter:image" content="https://jyoti-site.vercel.app/favicon.png" />
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-between px-8 sm:px-24 backdrop-brightness-50 grow">
+      <main className="flex flex-col min-h-screen items-center justify-between px-8 sm:px-24 backdrop-brightness-50 grow">
         <div className="grow"></div>
         <div className="mt-16 lg:mt-0 relative flex flex-col place-items-center text-center">
           <h1 className={`${titleFont.className} text-6xl lg:text-7xl font-bold`}>Jyoti Patel</h1>
-          <p className={`${mainFont.className} mt-6 lg:mt-8 mb-4 text-xl`}>Author of the prize-winning novel &quot;The Things That We Lost&quot;, published by #Merky Books.</p>
+          <p className={`${mainFont.className} mt-8 lg:mt-16 mb-4 text-xl max-w-md`}>Author of the prize-winning novel <b style={{whiteSpace: 'pre'}}>&quot;The Things That We Lost&quot;</b>, published by #Merky Books.</p>
         </div>
         <div className='grow'></div>
         <div className="mt-4 md:mt-0 grid grid-cols-1 md:grid-cols-5 text-center justify-center">
           <a
             href="/about"
-            className="group animate__animated animate__fadeInLeft px-8 py-4 transition-colors hover:text-orange-700 underline decoration-orange-700"
+            className="group animate__animated animate__fadeInLeft animate__delay-0s px-8 py-4 transition-colors hover:text-sky-300 underline decoration-sky-500"
             style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>About</span>
           </a>
           <a
             href="/books"
-            className="group animate__animated animate__fadeInLeft animate__delay-1s px-8 py-4 transition-colors hover:text-amber-700 underline decoration-amber-700"
+            className="group animate__animated animate__fadeInLeft animate__delay-1s px-8 py-4 transition-colors hover:text-teal-300 underline decoration-teal-500"
             style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Books</span>
           </a>
           <a
             href="/press"
-            className="group animate__animated animate__fadeInLeft animate__delay-2s px-8 py-4 transition-colors hover:text-yellow-700 underline decoration-yellow-700"
+            className="group animate__animated animate__fadeInLeft animate__delay-2s px-8 py-4 transition-colors hover:text-yellow-300 underline decoration-yellow-500"
             style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Press</span>
           </a>
           <a
             href="/events"
-            className="group animate__animated animate__fadeInLeft animate__delay-3s px-8 py-4 transition-colors hover:text-teal-700 underline decoration-teal-700"
+            className="group animate__animated animate__fadeInLeft animate__delay-3s px-8 py-4 transition-colors hover:text-amber-300 underline decoration-amber-500"
             style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Events</span>
           </a>
           <a
             href="/contact"
-            className="group animate__animated animate__fadeInLeft animate__delay-4s px-8 py-4 transition-colors hover:text-sky-700 underline decoration-sky-700"
+            className="group animate__animated animate__fadeInLeft animate__delay-4s px-8 py-4 transition-colors hover:text-orange-300 underline decoration-orange-500"
             style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Contact</span>
@@ -69,7 +70,7 @@ export default function Home() {
         <div className='flex flex-row align-center mt-8 md:mt-0'>
           <a
             href='https://twitter.com/Jyoti__Patel'
-            className="flex flex-row items-baseline group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            className="flex flex-row items-baseline group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-500 hover:dark:bg-neutral-800/30"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +84,7 @@ export default function Home() {
           </a>
           <a
             href='https://www.instagram.com/jyotisbooks/'
-            className="flex flex-row items-baseline group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            className="flex flex-row items-baseline group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-500 hover:dark:bg-neutral-800/30"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,10 +97,8 @@ export default function Home() {
             <span className={`${mainFont.className} font-semibold`} style={{color: '#aaa'}}>Instagram</span>
           </a>
         </div>
-        <div className='mt-4 mb-2 mr-2 self-end' style={{opacity: 0.25}}>
-          <p>Website by <a href='https://www.kibalabs.com'>Kiba Labs</a></p>
-        </div>
       </main>
+      <Footer />
     </div>
   )
 }
