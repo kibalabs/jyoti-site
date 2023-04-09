@@ -72,7 +72,7 @@ export default function Press() {
             <b>Dazed</b>: Jyoti Patel: ‘We can hold space for all parts of our identity’
           </a>
           <a
-            className='text-orange-200 hover:text-orange-500 mb-8 text-center'
+            className='text-orange-200 hover:text-orange-400 mb-8 text-center'
             href='https://www.bbc.co.uk/programmes/m001gx6v'
           >
             <b>BBC Radio 4 Front Row</b>: Debut novelist Jyoti Patel
@@ -84,7 +84,7 @@ export default function Press() {
             <b>Channel 4 News</b>: How do you ask someone the question: “Where are you from?” Jyoti Patel on identity and belonging
           </a>
           <a
-            className='text-sky-200 hover:text-sky-500 mb-8 text-center'
+            className='text-teal-200 hover:text-teal-500 mb-8 text-center'
             href='https://podcasters.spotify.com/pod/show/artistsinresidence/episodes/Write-a-debut-novel-about-identity--loss--and-belonging-with-Jyoti-Patel-e1ujcab?fbclid=PAAabcnVo7syl0VufhlyCvqKe5DgSFOyBl1UoRmfrmL7xxOrtX9bBIy7ugnaM'
           >
             <b>artists in residence podcast</b>: Write a debut novel about identity loss and belonging with Jyoti Patel
