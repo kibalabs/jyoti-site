@@ -65,7 +65,7 @@ export default function Books() {
               style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="fill-current mr-2 h-3.5 w-3.5" viewBox="0 0 512 512"><path d="M477.29 400a27.75 27.75 0 002.71-12V108a28 28 0 00-28-28H60a28 28 0 00-28 28v280a27.75 27.75 0 002.71 12H0v32h512v-32z"/></svg>
-              <span className={`${mainFont.className} text-xl font-semibold`}>E-book</span>
+              <span className={`${mainFont.className} text-xl font-semibold`}>Ebook</span>
             </a>
             <a
               href='https://www.penguin.co.uk/books/448416/the-things-that-we-lost-by-patel-jyoti/9781529906912'
