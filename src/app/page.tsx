@@ -7,15 +7,15 @@ const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui']
 
 export const metadata = {
   title: 'Jyoti Patel',
-  description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+  description: 'Author of the prize-winning novel "The Things That We Lost"',
   openGraph: {
     title: 'Jyoti Patel',
-    description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+    description: 'Author of the prize-winning novel "The Things That We Lost"',
   },
   twitter: {
     card: "summary_large_image",
     title: 'Jyoti Patel',
-    description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
+    description: 'Author of the prize-winning novel "The Things That We Lost"',
     site: "@Jyoti__Patel",
     images: {
       url: 'https://jyoti-site.vercel.app/icon.png',
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="grow"></div>
         <div className="mt-16 lg:mt-0 relative flex flex-col place-items-center text-center">
           <h1 className={`${titleFont.className} text-6xl lg:text-7xl font-bold`}>Jyoti Patel</h1>
-          <p className={`${mainFont.className} mt-8 lg:mt-16 mb-4 text-xl max-w-md`}>Author of the prize-winning novel <b style={{whiteSpace: 'pre'}}>&quot;The Things That We Lost&quot;</b>, published by #Merky Books.</p>
+          <p className={`${mainFont.className} mt-8 lg:mt-16 mb-4 text-xl max-w-md`}>Author of the prize-winning novel <b style={{whiteSpace: 'pre'}}>&quot;The Things That We Lost&quot;</b></p>
         </div>
         <div className='grow'></div>
         <div className="mt-4 md:mt-0 grid grid-cols-1 md:grid-cols-5 text-center justify-center">

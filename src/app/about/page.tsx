@@ -28,7 +28,7 @@ export default function About() {
   return (
     <div className="w-screen h-screen bg-[url('/about.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
       <NavBar />
-      <div className={`min-h-screen flex flex-row backdrop-blur-3xl backdrop-brightness-50`}>
+      <div className={`min-h-screen h-full flex flex-row items-stretch backdrop-blur-3xl backdrop-brightness-50`}>
         <div className={`hidden lg:flex lg:w-1/3 xl:w-1/2 h-full`}>
           <Image
             src="/about.jpg"
@@ -36,11 +36,11 @@ export default function About() {
             width={1000}
             height={1000}
             className={`w-full h-full`}
-            style={{objectFit: 'cover'}}
+            style={{objectFit: 'cover', objectPosition: '50% 30%'}}
           />
         </div>
-        <main className="flex min-h-screen flex-col items-center w-full lg:w-2/3 xl:w-1/2 px-14 lg:px-24">
-          <div className="mt-16 relative flex flex-col place-items-center text-center lg:text-left max-w-4xl">
+        <main className="flex flex-col items-center w-full lg:w-2/3 xl:w-1/2 px-14 lg:px-24">
+          <div className="mt-10 relative flex flex-col place-items-center text-center lg:text-left max-w-4xl">
             <h1 className={`${titleFont.className} text-5xl font-bold mb-5`}>About Jyoti Patel</h1>
             <div className={`flex flex-row mb-8 lg:mb-12`} style={{width: '25em', height: '0.1em'}}>
               <div className='w-1/5 h-full bg-sky-500 mx-1' />
@@ -58,14 +58,14 @@ export default function About() {
                 style={{maxHeight: '60vh', objectFit: 'contain', width: '100%'}}
               />
             </div>
-            <p className={`${mainFont.className} mb-4 lg:mb-12 text-xl`}>Jyoti Patel is an author and winner of the 2021 #Merky Books New Writers’ Prize. Her debut novel The Things That We Lost is out now.</p>
-            <p className={`${mainFont.className} mb-4 lg:mb-12 text-xl`}>An extract of The Things That We Lost was chosen as the winning submission from over 2,000 entries for the 2021 #Merky Books New Writers’ Prize, a competition that aims to discover unpublished, underrepresented writers aged 16-30 from the UK and Ireland. The panel of judges included #Merky Books founder Stormzy, Candice Brathwaite, Emma Dabiri, Guz Khan, and Katarina Johnson-Thompson.</p>
-            <p className={`${mainFont.className} mb-8 lg:mb-12 text-xl`}>Jyoti is a graduate of the University of East Anglia’s Creative Writing Prose Fiction MA and was selected as one of <a className='text-yellow-300' href='https://www.theguardian.com/books/2023/jan/08/meet-the-10-best-new-novelists-for-2023'>The Observer’s 10 Best New Novelists for 2023</a>. Her writing has previously been published as part of We Present’s ‘Literally’ series and in the anthology for the 2022 Bristol Short Story Prize, for which she was shortlisted.</p>
+            <p className={`${mainFont.className} mb-4 lg:mb-12 text-xl`}>Jyoti Patel is an author and winner of the 2021 #Merky Books New Writers’ Prize. Her debut novel <a className='text-sky-300 hover:text-sky-500' href='https://www.penguin.co.uk/books/448416/the-things-that-we-lost-by-patel-jyoti/9781529186338'>&quot;The Things That We Lost&quot;</a> is out now.</p>
+            <p className={`${mainFont.className} mb-4 lg:mb-12 text-xl`}>An extract of &quot;The Things That We Lost&quot; was chosen as the winning submission from over 2,000 entries for the 2021 #Merky Books New Writers’ Prize, a competition that aims to discover unpublished, underrepresented writers aged 16-30 from the UK and Ireland. The panel of judges included #Merky Books founder Stormzy, Candice Brathwaite, Emma Dabiri, Guz Khan, and Katarina Johnson-Thompson.</p>
+            <p className={`${mainFont.className} mb-8 lg:mb-12 text-xl`}>Jyoti is a graduate of the University of East Anglia’s Creative Writing Prose Fiction MA and was selected as one of <a className='text-sky-300 hover:text-sky-500' href='https://www.theguardian.com/books/2023/jan/08/meet-the-10-best-new-novelists-for-2023'>The Observer’s 10 Best New Novelists for 2023</a>. Her writing has previously been published as part of We Present’s ‘Literally’ series and in the anthology for the 2022 Bristol Short Story Prize, for which she was shortlisted.</p>
           </div>
-          <span className={`${mainFont.className} mt-4 mb-2`}>Follow Jyoti:</span>
+          <span className={`${mainFont.className} mb-2`}>Follow Jyoti:</span>
           <a
             href='https://twitter.com/Jyoti__Patel'
-            className="flex flex-row items-baseline group px-4 py-2 transition-colors text-cyan-500 hover:text-cyan-100"
+            className="flex flex-row items-baseline group px-4 py-2 transition-colors text-sky-500 hover:text-sky-100"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ export default function About() {
           </a>
           <a
             href='https://www.instagram.com/jyotisbooks/'
-            className="flex flex-row items-baseline group px-4 py-2 transition-colors text-rose-400 hover:text-rose-100"
+            className="flex flex-row items-baseline group px-4 py-2 transition-colors text-sky-400 hover:text-sky-100"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

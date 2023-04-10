@@ -34,7 +34,8 @@ export default function Books() {
         alt="Jyoti Patel"
         width={1000}
         height={400}
-        style={{objectFit: 'cover', width: '100%', maxHeight: '50vh', objectPosition: '100% 0%'}}
+        // maxHeight: '50vh',
+        style={{objectFit: 'cover', width: '100%', objectPosition: '100% 0%'}}
       />
       <main className="flex min-h-screen flex-col items-center justify-between backdrop-blur-3xl backdrop-brightness-50">
         <div className="mt-16 mx-16 relative flex flex-col place-items-center text-center max-w-4xl">
@@ -85,7 +86,7 @@ export default function Books() {
           <p className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>‘A deftly assured debut novel about a fractured family and how words left unspoken can be more devastating than the truth.’<br/><span className={`leading-loose font-semibold text-sky-200`}>Red Magazine</span></p>
           <p className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>‘A deeply reflective, searching depiction of grief.’ <br/><span className={`leading-loose font-semibold text-teal-200`}>The Times Literary Supplement</span></p>
           <p className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>‘Highly recommended.’ <br/><span className={`leading-loose font-semibold text-yellow-200`}>Huffington Post</span></p>
-          <p className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>‘An assured debut from a vital new voice. About family, grief and belonging, Patel weaves an intricate story that will stay with you.’ <br/><span className={`leading-loose font-semibold text-amber-200`}> Nikesh Shukla.</span></p>
+          <p className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>‘An assured debut from a vital new voice. About family, grief and belonging, Patel weaves an intricate story that will stay with you.’ <br/><span className={`leading-loose font-semibold text-amber-200`}> Nikesh Shukla</span></p>
           <p className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>‘Immeasurably moving, a poignant and touching story about love and family bonds, and an especially tender portrait of a mother and son.’ <br/><span className={`leading-loose font-semibold text-orange-200`}>Huma Qureshi</span></p>
           <p className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>‘Brilliant.’<br/><span className={`leading-loose font-semibold text-sky-200`}>Candice Brathwaite</span></p>
           <p className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>‘Incredibly moving, this is an immersive novel focusing on grief but also love and relationships. I fell in love with Avani and Nik, characters so real I could hardly believe they&apos;re fictional. Jyoti Patel is a hugely exciting new writer.’<br/><span className={`leading-loose font-semibold text-teal-200`}>Louise Hare</span></p>
