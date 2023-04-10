@@ -27,7 +27,7 @@ export const metadata = {
 };
 export default function Books() {
   return (
-    <div className="w-screen h-screen bg-[url('/books.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
+    <div className="w-screen min-h-screen bg-[url('/books.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
       <NavBar />
       <Image
         src="/books-banner.jpg"

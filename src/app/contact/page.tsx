@@ -26,7 +26,7 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div className="w-screen h-screen bg-[url('/contact.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
+    <div className="w-screen min-h-screen bg-[url('/contact.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
       <NavBar />
       <div className={`min-h-screen h-full flex flex-row items-stretch backdrop-blur-3xl backdrop-brightness-50`}>
         <div className={`hidden lg:flex lg:w-1/3 xl:w-1/2 h-full`}>
@@ -59,8 +59,8 @@ export default function Contact() {
               />
             </div>
             <p>Jyoti is represented by literary agent <a href='https://greeneheaton.co.uk/agents/holly-faulks/' className='text-sky-300 hover:text-sky-500'>Holly Faulks at Greene & Heaton</a> and film and TV agent <a href='https://theagency.co.uk/the-agents/emily-hickman/' className='text-sky-300 hover:text-sky-500'>Emily Hickman at The Agency.</a></p>
+            <div className='grow mt-16'></div>
           </div>
-          <div className='grow mt-16'></div>
         </main>
       </div>
       <Footer />

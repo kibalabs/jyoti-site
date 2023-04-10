@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen bg-[url('/home.jpg')] lg:bg-[url('/home-large.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
+    <div className="w-screen min-h-screen bg-[url('/home.jpg')] lg:bg-[url('/home-large.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
       <main className="flex flex-col min-h-screen items-center justify-between px-8 sm:px-24 backdrop-brightness-50 grow">
         <div className="grow"></div>
         <div className="mt-16 lg:mt-0 relative flex flex-col place-items-center text-center">

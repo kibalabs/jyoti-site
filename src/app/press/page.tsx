@@ -26,7 +26,7 @@ export const metadata = {
 
 export default function Press() {
   return (
-    <div className="w-screen h-screen bg-[url('/press.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
+    <div className="w-screen min-h-screen bg-[url('/press.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
       <NavBar />
       <div className={`min-h-screen h-full flex flex-row items-stretch backdrop-blur-3xl backdrop-brightness-50`}>
         <div className={`hidden lg:flex lg:w-1/3 xl:w-1/2 h-full`}>
@@ -100,8 +100,8 @@ export default function Press() {
             >
               <b>artists in residence podcast</b><br/>Write a debut novel about identity loss and belonging with Jyoti Patel
             </a>
+            <div className='grow mt-16'></div>
           </div>
-          <div className='grow mt-16'></div>
         </main>
       </div>
       <Footer />

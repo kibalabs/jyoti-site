@@ -26,7 +26,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="w-screen h-screen bg-[url('/about.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
+    <div className="w-screen min-h-screen bg-[url('/about.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
       <NavBar />
       <div className={`min-h-screen h-full flex flex-row items-stretch backdrop-blur-3xl backdrop-brightness-50`}>
         <div className={`hidden lg:flex lg:w-1/3 xl:w-1/2 h-full`}>
@@ -39,7 +39,7 @@ export default function About() {
             style={{objectFit: 'cover', objectPosition: '50% 30%'}}
           />
         </div>
-        <main className="flex flex-col items-center w-full lg:w-2/3 xl:w-1/2 px-14 lg:px-24">
+        <main className="flex flex-col items-center w-full h-full lg:w-2/3 xl:w-1/2 px-14 lg:px-24">
           <div className="mt-10 relative flex flex-col place-items-center text-center lg:text-left max-w-4xl">
             <h1 className={`${titleFont.className} text-5xl font-bold mb-5`}>About Jyoti Patel</h1>
             <div className={`flex flex-row mb-8 lg:mb-12`} style={{width: '25em', height: '0.1em'}}>
