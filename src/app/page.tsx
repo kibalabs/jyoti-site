@@ -1,9 +1,6 @@
-import { Noto_Serif_Khojki } from 'next/font/google'
+import { mainFont, titleFont } from './fonts';
 import Footer from './footer';
 import 'animate.css';
-
-const titleFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
-const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
 
 export const metadata = {
   title: 'Jyoti Patel',
@@ -25,8 +22,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="w-screen min-h-screen bg-[url('/home.jpg')] lg:bg-[url('/home-large.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
-      <main className="flex flex-col min-h-screen items-center justify-between px-8 sm:px-24 backdrop-brightness-50 grow">
+    <div className="w-screen h-screen bg-[url('/home.jpg')] lg:bg-[url('/home-large.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
+      <main className="flex min-h-screen flex-col items-center justify-between px-8 sm:px-24 backdrop-brightness-50 grow">
         <div className="grow"></div>
         <div className="mt-16 lg:mt-0 relative flex flex-col place-items-center text-center">
           <h1 className={`${titleFont.className} text-6xl lg:text-7xl font-bold`}>Jyoti Patel</h1>

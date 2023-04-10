@@ -1,10 +1,7 @@
 'use client'
 import React from 'react';
-import { Noto_Serif_Khojki } from 'next/font/google'
 import Image from 'next/image';
-
-const titleFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
-const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
+import { mainFont } from './fonts';
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState<boolean>(false);

@@ -1,12 +1,9 @@
 import React from 'react';
-import { Noto_Serif_Khojki } from 'next/font/google'
 import Image from 'next/image';
 import NavBar from '../navbar';
 import Footer from '../footer';
 import 'animate.css';
-
-const titleFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
-const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
+import { mainFont, titleFont } from '../fonts';
 
 export const metadata = {
   title: 'Jyoti Patel | Books',

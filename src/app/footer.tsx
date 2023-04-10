@@ -1,7 +1,5 @@
 import React from 'react';
-import { Noto_Serif_Khojki } from 'next/font/google'
-
-const mainFont = Noto_Serif_Khojki({ subsets: ['latin'], fallback: ['system-ui'] });
+import { mainFont } from './fonts';
 
 export default function Footer() {
   return (
