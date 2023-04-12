@@ -27,9 +27,9 @@ export default function ImageLayout(props: ImageLayoutProps) {
           />
         </div>
         <main className="flex flex-col items-center w-full h-full lg:w-2/3 xl:w-1/2 px-14 lg:px-24">
-          <div className="mt-10 relative flex flex-col place-items-center text-center lg:text-left max-w-4xl">
+          <div className="mt-10 relative flex flex-col place-items-center text-center lg:text-left" style={{maxWidth: 'calc(min(95%, 56rem))'}}>
             <h1 className={`${titleFont.className} text-5xl font-bold mb-5`}>{props.title}</h1>
-            <div className={`flex flex-row mb-8 lg:mb-12`} style={{width: '25em', height: '0.1em'}}>
+            <div className={`flex flex-row mb-8 lg:mb-12`} style={{width: '25em', height: '0.1em', maxWidth: '100%'}}>
               <div className='w-1/5 h-full bg-sky-500 mx-1' />
               <div className='w-1/5 h-full bg-teal-500 mx-1' />
               <div className='w-1/5 h-full bg-yellow-500 mx-1' />
