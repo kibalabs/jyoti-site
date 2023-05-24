@@ -15,7 +15,7 @@ export default function ImageLayout(props: ImageLayoutProps) {
   return (
     <div className="w-screen min-h-screen flex flex-col bg-[url('/about.jpg')] bg-cover bg-top bg-no-repeat bg-scroll">
       <NavBar />
-      <div className={`flex-grow flex flex-row items-stretch backdrop-blur-3xl backdrop-brightness-50 ${mainFont.className}`}>
+      <div className={`min-h-screen flex-grow flex flex-row items-stretch backdrop-blur-3xl backdrop-brightness-50 ${mainFont.className}`}>
         <div className={`hidden lg:flex lg:w-1/3 xl:w-1/2`}>
           <Image
             src={props.imageUrl}
