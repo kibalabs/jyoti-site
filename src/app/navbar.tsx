@@ -7,9 +7,8 @@ export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState<boolean>(false);
   const [path, setPath] = React.useState<string | null>(null);
 
-  React.useEffect((): void => {
+  React.useLayoutEffect((): void => {
     const newPath = typeof window !== 'undefined' ? window.location.pathname : null;
-    console.log('newPath', newPath);
     setPath(newPath);
   }, []);
 

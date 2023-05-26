@@ -1,3 +1,4 @@
+import React from 'react';
 import { mainFont } from '../fonts';
 import ImageLayout from '../imageLayout';
 
@@ -19,51 +20,58 @@ export const metadata = {
   },
 };
 
+interface EventItem {
+  link: string;
+  title: string;
+  date: string;
+}
+
+const eventItems: EventItem[] = [{
+  link: 'https://nationalcentreforwriting.org.uk/whats-on/intricate-worlds/',
+  title: 'Caleb Azumah Nelson & Jyoti Patel in conversation',
+  date: '26 May 2023',
+}, {
+  link: 'https://www.hayfestival.com/p-20271-stormzy-five-years-of-merky-books.aspx',
+  title: 'Hay Festival',
+  date: '3 June 2023',
+}, {
+  link: 'https://www.bl.uk/events/jlf-jaipur-literature-festival-at-the-british-library',
+  title: 'Jaipur Literary Festival at the British Library',
+  date: '11 June 2023',
+}, {
+  link: 'https://www.glastonburyfestivals.co.uk/silver-hayes-announces-its-glastonbury-2023-line-up/',
+  title: 'Glastonbury Festival - Silver Hayes',
+  date: '24 June 2023',
+}, {
+  link: 'https://www.womad.co.uk',
+  title: 'WOMAD Festival',
+  date: '28 July 2023',
+}, {
+  link: 'https://primadonnafestival.com/year-2023/',
+  title: 'Primadonna Festival',
+  date: '30 July 2023',
+}];
+
+const getTextColorCss = (index: number): string => {
+  const colors = ['sky', 'teal', 'yellow', 'orange'];
+  const color = colors[index % colors.length];
+  return `text-${color}-200 hover:text-${color}-500`;
+}
+
 export default function Press() {
   return (
     <ImageLayout imageUrl='/events.jpg' imageDescription='Jyoti Patel Events' title='Events' imageCenterPoint='30% 30%'>
-      <span>26 May 2023</span>
-      <a
-        className={`${mainFont.className} text-center font-bold text-sky-200 hover:text-sky-500 mb-8`}
-        href='https://nationalcentreforwriting.org.uk/whats-on/intricate-worlds/'
-        >
-        Caleb Azumah Nelson & Jyoti Patel in conversation
-      </a>
-      <span>3 June 2023</span>
-      <a
-        className={`${mainFont.className} text-center font-bold text-teal-200 hover:text-teal-500 mb-8`}
-        href='https://www.hayfestival.com/p-20271-stormzy-five-years-of-merky-books.aspx'
-      >
-        Hay Festival
-      </a>
-      <span>11 June 2023</span>
-      <a
-        className={`${mainFont.className} text-center font-bold text-yellow-200 hover:text-yellow-500 mb-8`}
-        href='https://www.bl.uk/events/jlf-jaipur-literature-festival-at-the-british-library'
-      >
-        Jaipur Literary Festival at the British Library
-      </a>
-      <span>24 June 2023</span>
-      <a
-        className={`${mainFont.className} text-center font-bold text-orange-200 hover:text-orange-500 mb-8`}
-        href='https://www.glastonburyfestivals.co.uk/silver-hayes-announces-its-glastonbury-2023-line-up/'
-      >
-        Glastonbury Festival - Silver Hayes
-      </a>
-      <span>28  2023</span>
-      <a
-        className={`${mainFont.className} text-center font-bold text-sky-200 hover:text-sky-500 mb-8`}
-        href='https://www.womad.co.uk'
-      >
-        WOMAD Festival
-      </a>
-      <span>30 July 2023</span>
-      <a
-        className={`${mainFont.className} text-center font-bold text-teal-200 hover:text-teal-500 mb-8`}
-        href='https://primadonnafestival.com/year-2023/'
-      >
-        Primadonna Festival
-      </a>
+      {eventItems.map((eventItem: EventItem, index: number): React.ReactElement => (
+        <React.Fragment key={index}>
+          <span>{eventItem.date}</span>
+          <a
+            className={`${mainFont.className} ${getTextColorCss(index)} mb-8 text-center font-bold`}
+            href={eventItem.link}
+          >
+            {eventItem.title}
+          </a>
+        </React.Fragment>
+      ))}
     </ImageLayout>
   )
 }
