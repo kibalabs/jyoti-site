@@ -16,4 +16,14 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    'text-sky-200',
+    'text-sky-500',
+    'text-teal-200',
+    'text-teal-500',
+    'text-yellow-200',
+    'text-yellow-500',
+    'text-orange-200',
+    'text-orange-500',
+  ]
 }
