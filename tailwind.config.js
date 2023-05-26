@@ -19,11 +19,15 @@ module.exports = {
   safelist: [
     'text-sky-200',
     'text-sky-500',
+    'hover:text-sky-500',
     'text-teal-200',
     'text-teal-500',
+    'hover:text-teal-500',
     'text-yellow-200',
     'text-yellow-500',
+    'hover:text-yellow-500',
     'text-orange-200',
     'text-orange-500',
+    'hover:text-orange-500',
   ]
 }
