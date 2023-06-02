@@ -27,13 +27,13 @@ interface EventItem {
 }
 
 const eventItems: EventItem[] = [{
-  link: 'https://nationalcentreforwriting.org.uk/whats-on/intricate-worlds/',
-  title: 'Caleb Azumah Nelson & Jyoti Patel in conversation',
-  date: '26 May 2023',
-}, {
+//   link: 'https://nationalcentreforwriting.org.uk/whats-on/intricate-worlds/',
+//   title: 'Caleb Azumah Nelson & Jyoti Patel in conversation',
+//   date: '26 May 2023',
+// }, {
   link: 'https://www.hayfestival.com/p-20271-stormzy-five-years-of-merky-books.aspx',
   title: 'Hay Festival',
-  date: '3 June 2023',
+  date: '4 June 2023',
 }, {
   link: 'https://www.bl.uk/events/jlf-jaipur-literature-festival-at-the-british-library',
   title: 'Jaipur Literary Festival at the British Library',
