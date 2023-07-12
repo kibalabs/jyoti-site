@@ -32,7 +32,7 @@ const bookItems: BookItem[] = [{
   text: 'This is a big book, full of assured and affecting writing.',
   source: 'The Guardian',
 }, {
-  text: 'One of the best books I&apos;ve read this year.',
+  text: 'One of the best books I\'ve read this year.',
   source: 'gal-dem',
 }, {
   text: 'A delicate and empathic debut.',

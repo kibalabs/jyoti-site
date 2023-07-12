@@ -31,25 +31,33 @@ const eventItems: EventItem[] = [{
 //   title: 'Caleb Azumah Nelson & Jyoti Patel in conversation',
 //   date: '26 May 2023',
 // }, {
-  link: 'https://www.hayfestival.com/p-20271-stormzy-five-years-of-merky-books.aspx',
-  title: 'Hay Festival',
-  date: '4 June 2023',
-}, {
-  link: 'https://www.bl.uk/events/jlf-jaipur-literature-festival-at-the-british-library',
-  title: 'Jaipur Literary Festival at the British Library',
-  date: '11 June 2023',
-}, {
-  link: 'https://www.glastonburyfestivals.co.uk/silver-hayes-announces-its-glastonbury-2023-line-up/',
-  title: 'Glastonbury Festival - Silver Hayes',
-  date: '24 June 2023',
-}, {
+//   link: 'https://www.hayfestival.com/p-20271-stormzy-five-years-of-merky-books.aspx',
+//   title: 'Hay Festival',
+//   date: '4 June 2023',
+// }, {
+//   link: 'https://www.bl.uk/events/jlf-jaipur-literature-festival-at-the-british-library',
+//   title: 'Jaipur Literary Festival at the British Library',
+//   date: '11 June 2023',
+// }, {
+//   link: 'https://www.glastonburyfestivals.co.uk/silver-hayes-announces-its-glastonbury-2023-line-up/',
+//   title: 'Glastonbury Festival - Silver Hayes',
+//   date: '24 June 2023',
+// }, {
   link: 'https://www.womad.co.uk',
   title: 'WOMAD Festival',
-  date: '28 July 2023',
+  date: '28 July 2023 at 2pm',
 }, {
   link: 'https://primadonnafestival.com/year-2023/',
   title: 'Primadonna Festival',
-  date: '30 July 2023',
+  date: '30 July 2023 at 3pm',
+}, {
+  link: 'https://www.wildernessfestival.com/',
+  title: 'Wilderness Festival',
+  date: '6 Aug 2023 at 2.45pm',
+}, {
+  link: 'http://www.guildfordbookfestival.co.uk/readers-day-2023/',
+  title: 'Guildford Book Festival',
+  date: '14 Oct 2023 at 1.40pm',
 }];
 
 const getTextColorCss = (index: number): string => {
