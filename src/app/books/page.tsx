@@ -62,7 +62,7 @@ const bookItems: BookItem[] = [{
   text: 'Brilliant.',
   source: 'Candice Brathwaite',
 }, {
-  text: 'Incredibly moving, this is an immersive novel focusing on grief but also love and relationships. I fell in love with Avani and Nik, characters so real I could hardly believe they&apos;re fictional. Jyoti Patel is a hugely exciting new writer.',
+  text: 'Incredibly moving, this is an immersive novel focusing on grief but also love and relationships. I fell in love with Avani and Nik, characters so real I could hardly believe they\'re fictional. Jyoti Patel is a hugely exciting new writer.',
   source: 'Louise Hare',
 }, {
   text: 'This is a captivating, deeply moving book written with eloquence and beauty. It left me wanting to read more of Jyoti\'s words. An exciting new talent.',
