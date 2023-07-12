@@ -5,6 +5,7 @@ import 'animate.css';
 export const metadata = {
   title: 'Jyoti Patel',
   description: 'Author of the prize-winning novel "The Things That We Lost"',
+  ahrefsSiteVerification: 'a3023b147a43620661343c066e99f489fb5c806d21df477f183a30c2428ab64b',
   openGraph: {
     title: 'Jyoti Patel',
     description: 'Author of the prize-winning novel "The Things That We Lost"',
