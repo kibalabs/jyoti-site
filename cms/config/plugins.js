@@ -33,7 +33,7 @@ module.exports = ({ env }) => ({
     },
   },
   'update-static-content': {
-    enabled: true,
+    enabled: false,
     config: {
       owner: 'kibalabs',
       repo: 'jyoti-site',
