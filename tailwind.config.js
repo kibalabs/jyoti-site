@@ -15,9 +15,12 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   safelist: [
     'text-sky-200',
+    'text-sky-300',
     'text-sky-500',
     'hover:text-sky-500',
     'text-teal-200',

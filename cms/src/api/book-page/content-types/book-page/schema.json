@@ -8,20 +8,23 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "Quotes": {
       "type": "component",
       "repeatable": true,
-      "component": "global.quote"
+      "component": "global.quote",
+      "required": true
     },
     "Title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Description": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

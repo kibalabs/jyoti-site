@@ -26,6 +26,19 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.prose {
+  color: rgb(var(--foreground-rgb));
+}
+
+.prose a {
+  text-decoration: none;
+  color: theme(colors.sky.300);
+}
+
+.prose a:hover{
+  color: theme(colors.sky.500);
+}
+
 @media (min-width: 1024px) {
   .top-navbar {
     display: inline-flex !important;

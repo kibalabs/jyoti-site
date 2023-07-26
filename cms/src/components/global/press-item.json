@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_global_press_items",
+  "info": {
+    "displayName": "PressItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "required": true
+    },
+    "Source": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

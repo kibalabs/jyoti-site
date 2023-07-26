@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "events_pages",
+  "info": {
+    "singularName": "events-page",
+    "pluralName": "events-pages",
+    "displayName": "EventsPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "BodyTitle": {
+      "type": "string",
+      "required": true
+    },
+    "BodyImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Events": {
+      "displayName": "Event",
+      "type": "component",
+      "repeatable": true,
+      "component": "global.event"
+    }
+  }
+}

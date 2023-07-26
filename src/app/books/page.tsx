@@ -4,28 +4,16 @@ import { mainFont, titleFont } from '../fonts';
 import { Metadata } from 'next';
 import NavBar from '../navbar';
 import Footer from '../footer';
-
 import 'animate.css';
+
 import { getTextColorCss } from '../util';
-
-const HOST = 'https://jyoti-cms.kiba.dev';
-// const HOST = 'http://127.0.0.1:1337';
-const API_URL = `${HOST}/api/book-page?populate=deep`;
-
-const getPageData = async (): Promise<Record<string, any>> => {
-  const responseData = await fetch(API_URL).then((res) => res.json());
-  return responseData.data.attributes;
-}
+import { createMetadata, getPageData } from './data';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const pageData = await getPageData();
-  return {
-    title: pageData.Title,
-    description: pageData.Description,
-  }
+  return createMetadata();
 }
 
-export default async function BooksPage() {
+export default async function BooksPage(): Promise<React.ReactElement> {
   const pageData = await getPageData();
   return (
     <div className="w-screen min-h-screen bg-[url('/books.jpg')] bg-cover bg-top bg-no-repeat bg-scroll overflow-y-scroll">
@@ -79,11 +67,11 @@ export default async function BooksPage() {
             </a>
           </div>
           <p className={`${mainFont.className} mt-8`}></p>
-          {pageData.Quotes.map((bookItem: Record<string, string>, index: number): React.ReactElement => (
+          {pageData.Quotes.map((quote: IQuote, index: number): React.ReactElement => (
             <p key={index} className={`${mainFont.className} mt-8 text-xl w-full max-w-xl`}>
-              ‘{bookItem.Text}’
+              ‘{quote.Text}’
               <br />
-              <span className={`leading-loose font-semibold ${getTextColorCss(index)}`}>{bookItem.Source}</span>
+              <span className={`leading-loose font-semibold ${getTextColorCss(index)}`}>{quote.Source}</span>
             </p>
           ))}
           <div className={`${mainFont.className} mb-8 lg:mb-20`}></div>

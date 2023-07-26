@@ -1,30 +1,22 @@
+import React from 'react';
+import { Metadata } from 'next';
+import ReactMarkdown from "react-markdown";
+
 import { mainFont } from '../fonts';
 import ImageLayout from '../imageLayout';
+import { createMetadata, getPageData } from './data';
 
-export const metadata = {
-  title: 'Jyoti Patel | About',
-  description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
-  openGraph: {
-    title: 'Jyoti Patel | About',
-    description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: 'Jyoti Patel | About',
-    description: 'Author of the prize-winning novel "The Things That We Lost", published by #Merky Books.',
-    site: "@Jyoti__Patel",
-    images: {
-      url: 'https://jyoti-site.vercel.app/icon.png',
-    },
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return createMetadata();
+}
 
-export default function About() {
+export default async function AboutPage(): Promise<React.ReactElement> {
+  const pageData = await getPageData();
   return (
-    <ImageLayout imageUrl='/about.jpg' imageDescription='Jyoti Patel' title='About Jyoti Patel' imageCenterPoint='50% 30%'>
-      <p className={`${mainFont.className} mb-4 lg:mb-12 text-xl`}>Jyoti Patel is an author and winner of the 2021 #Merky Books New Writers’ Prize. Her debut novel <a className='text-sky-300 hover:text-sky-500' href='https://www.penguin.co.uk/books/448416/the-things-that-we-lost-by-patel-jyoti/9781529186338'>&quot;The Things That We Lost&quot;</a> is out now.</p>
-      <p className={`${mainFont.className} mb-4 lg:mb-12 text-xl`}>An extract of &quot;The Things That We Lost&quot; was chosen as the winning submission from over 2,000 entries for the 2021 #Merky Books New Writers’ Prize, a competition that aims to discover unpublished, underrepresented writers aged 16-30 from the UK and Ireland. The panel of judges included #Merky Books founder Stormzy, Candice Brathwaite, Emma Dabiri, Guz Khan, and Katarina Johnson-Thompson.</p>
-      <p className={`${mainFont.className} mb-8 lg:mb-12 text-xl`}>Jyoti is a graduate of the University of East Anglia’s Creative Writing Prose Fiction MA and was selected as one of <a className='text-sky-300 hover:text-sky-500' href='https://www.theguardian.com/books/2023/jan/08/meet-the-10-best-new-novelists-for-2023'>The Observer’s 10 Best New Novelists for 2023</a>. Her writing has previously been published as part of We Present’s ‘Literally’ series and in the anthology for the 2022 Bristol Short Story Prize, for which she was shortlisted.</p>
+    <ImageLayout imageUrl={pageData.BodyImageUrl} imageDescription={pageData.Title} title={pageData.BodyTitle} imageCenterPoint='50% 30%'>
+      <article className={`${mainFont.className} prose mb-4 lg:mb-12 text-xl`}>
+        <ReactMarkdown>{pageData.Body}</ReactMarkdown>
+      </article>
       <span className={`${mainFont.className} mb-2`}>Follow Jyoti:</span>
       <a
         href='https://twitter.com/Jyoti__Patel'
