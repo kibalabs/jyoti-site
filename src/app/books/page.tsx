@@ -7,7 +7,7 @@ import Footer from '../footer';
 import 'animate.css';
 
 import { getTextColorCss } from '../util';
-import { createMetadata, getPageData } from './data';
+import { IQuote, createMetadata, getPageData } from './data';
 
 export async function generateMetadata(): Promise<Metadata> {
   return createMetadata();
