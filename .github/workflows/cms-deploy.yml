@@ -1,0 +1,71 @@
+name: deploy
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cms/**"
+      - ".github/workflows/cms-deploy.yml"
+  repository_dispatch:
+    types:
+      - strapi-webhook
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}-cms-deploy
+  cancel-in-progress: true
+jobs:
+  cms-deploy:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_IMAGE: ghcr.io/${{ github.repository }}-cms:latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Login to GitHub container registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Build docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./cms/
+          push: true
+          cache-from: type=gha,scope=cms
+          cache-to: type=gha,mode=max,scope=cms
+          tags: ${{ env.DOCKER_IMAGE }}
+  cms-run:
+    needs: cms-deploy
+    runs-on: ubuntu-latest
+    env:
+      NAME: jyoti-cms
+      DOCKER_IMAGE: ghcr.io/${{ github.repository }}-cms:latest
+    steps:
+      - name: executing remote ssh commands
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.APIBOX_URL }}
+          username: ${{ secrets.APIBOX_USER }}
+          key: ${{ secrets.APIBOX_SSH_KEY }}
+          port: ${{ secrets.APIBOX_PORT }}
+          envs: DOCKER_IMAGE,NAME
+          script_stop: true
+          script: |
+            url="jyoti-cms.kiba.dev"
+            varsFile=~/.${NAME}.vars
+            docker pull ${DOCKER_IMAGE}
+            docker stop ${NAME} && docker rm ${NAME} || true
+            docker run \
+                --name ${NAME} \
+                --detach \
+                --publish-all \
+                --restart on-failure \
+                --env NAME=${NAME} \
+                --env VIRTUAL_HOST=${url} \
+                --env LETSENCRYPT_HOST=${url} \
+                --env-file ${varsFile} \
+                --volume /home/ec2-user/jyoti-cms-data/:/opt/data/ \
+                --env STRAPI_DATABASE_FILENAME=/opt/data/db.sqlite \
+                ${DOCKER_IMAGE}

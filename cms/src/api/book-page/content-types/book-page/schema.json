@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "book_pages",
+  "info": {
+    "singularName": "book-page",
+    "pluralName": "book-pages",
+    "displayName": "BookPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Quotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.quote"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    }
+  }
+}

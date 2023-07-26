@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_global_quotes",
+  "info": {
+    "displayName": "Quote",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "required": true
+    },
+    "Source": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
