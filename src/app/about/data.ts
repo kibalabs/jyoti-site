@@ -1,5 +1,5 @@
-import { Metadata } from "next";
-import { HOST } from "../util";
+import { Metadata } from 'next';
+import { HOST } from '../util';
 
 export interface PageData {
   Title: string;
@@ -30,10 +30,10 @@ export const createMetadata = async (): Promise<Metadata> => {
       description: pageData.Description,
     },
     twitter: {
-      card: "summary_large_image",
+      card: 'summary_large_image',
       title: pageData.Title,
       description: pageData.Description,
-      site: "@Jyoti__Patel",
+      site: '@Jyoti__Patel',
       images: {
         url: 'https://jyoti-site.vercel.app/icon.png',
       },
