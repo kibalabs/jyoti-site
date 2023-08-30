@@ -6,6 +6,7 @@ const nextConfig = {
   images: {
     domains: [
       'kiba-jyoti-site-assets.s3.eu-west-1.amazonaws.com',
+      'kiba-jyoti-website-assets.s3.eu-west-1.amazonaws.com',
       'jyotipatelauthor.com',
     ],
   },

@@ -21,6 +21,7 @@ module.exports = [
             "market-assets.strapi.io",
             "res.cloudinary.com",
             'kiba-jyoti-site-assets.s3.eu-west-1.amazonaws.com',
+            'kiba-jyoti-website-assets.s3.eu-west-1.amazonaws.com',
           ],
           "media-src": [
             "'self'",
@@ -29,6 +30,7 @@ module.exports = [
             "market-assets.strapi.io",
             "res.cloudinary.com",
             'kiba-jyoti-site-assets.s3.eu-west-1.amazonaws.com',
+            'kiba-jyoti-website-assets.s3.eu-west-1.amazonaws.com',
           ],
           upgradeInsecureRequests: null,
         },
