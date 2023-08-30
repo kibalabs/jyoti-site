@@ -2,10 +2,10 @@ terraform {
   required_version = "~> 1.3.3"
 
   backend "s3" {
-    # aws --profile kiba s3 mb s3://kiba-infra-jyoti-site-assets-production
+    # aws --profile kiba s3 mb s3://kiba-infra-jyoti-website-assets-production
     key = "tf-state.json"
     region = "eu-west-1"
-    bucket = "kiba-infra-jyoti-site-assets-production"
+    bucket = "kiba-infra-jyoti-website-assets-production"
     profile = "kiba"
     encrypt = true
   }
@@ -23,9 +23,5 @@ provider "aws" {
 }
 
 locals {
-  project = "jyoti-site-assets"
-}
-
-data "aws_vpc" "default" {
-  default = true
+  project = "jyoti-website-assets"
 }

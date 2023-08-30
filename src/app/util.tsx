@@ -1,5 +1,5 @@
 
-export const HOST = 'https://jyoti-cms.kiba.dev';
+export const HOST = 'https://jyoti-cms.kibalabs.com';
 // export const HOST = 'http://127.0.0.1:1337';
 
 export const getTextColorCss = (index: number): string => {
