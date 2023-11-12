@@ -30,28 +30,28 @@ export default function Home() {
         <div className="grow"></div>
         <div className="mt-16 lg:mt-0 relative flex flex-col place-items-center text-center">
           <h1 className={`${titleFont.className} text-6xl lg:text-7xl font-bold`}>Jyoti Patel</h1>
-          <p className={`${mainFont.className} mt-8 lg:mt-16 mb-4 text-xl max-w-md`}>Author of the prize-winning novel <b style={{whiteSpace: 'pre'}}>&quot;The Things That We Lost&quot;</b></p>
+          <p className={`${mainFont.className} mt-8 lg:mt-16 mb-4 text-xl max-w-md`}>Author of the prize-winning novel <b style={{ whiteSpace: 'pre' }}>&quot;The Things That We Lost&quot;</b></p>
         </div>
         <div className='grow'></div>
         <div className="mt-4 md:mt-0 grid grid-cols-1 md:grid-cols-4 text-center justify-center">
           <a
             href="/about"
             className="group animate__animated animate__fadeInLeft animate__delay-0s px-8 py-4 transition-colors hover:text-sky-300 underline decoration-sky-500"
-            style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
+            style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em' }}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>About</span>
           </a>
           <a
             href="/books"
             className="group animate__animated animate__fadeInLeft animate__delay-1s px-8 py-4 transition-colors hover:text-teal-300 underline decoration-teal-500"
-            style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
+            style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em' }}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Books</span>
           </a>
           <a
             href="/press"
             className="group animate__animated animate__fadeInLeft animate__delay-2s px-8 py-4 transition-colors hover:text-yellow-300 underline decoration-yellow-500"
-            style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
+            style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em' }}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Press</span>
           </a>
@@ -65,7 +65,7 @@ export default function Home() {
           <a
             href="/contact"
             className="group animate__animated animate__fadeInLeft animate__delay-3s px-8 py-4 transition-colors hover:text-orange-300 underline decoration-orange-500"
-            style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
+            style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em' }}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Contact</span>
           </a>
