@@ -33,7 +33,7 @@ export default function Home() {
           <p className={`${mainFont.className} mt-8 lg:mt-16 mb-4 text-xl max-w-md`}>Author of the prize-winning novel <b style={{whiteSpace: 'pre'}}>&quot;The Things That We Lost&quot;</b></p>
         </div>
         <div className='grow'></div>
-        <div className="mt-4 md:mt-0 grid grid-cols-1 md:grid-cols-5 text-center justify-center">
+        <div className="mt-4 md:mt-0 grid grid-cols-1 md:grid-cols-4 text-center justify-center">
           <a
             href="/about"
             className="group animate__animated animate__fadeInLeft animate__delay-0s px-8 py-4 transition-colors hover:text-sky-300 underline decoration-sky-500"
@@ -55,16 +55,16 @@ export default function Home() {
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Press</span>
           </a>
-          <a
+          {/* <a
             href="/events"
             className="group animate__animated animate__fadeInLeft animate__delay-3s px-8 py-4 transition-colors hover:text-amber-300 underline decoration-amber-500"
             style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Events</span>
-          </a>
+          </a> */}
           <a
             href="/contact"
-            className="group animate__animated animate__fadeInLeft animate__delay-4s px-8 py-4 transition-colors hover:text-orange-300 underline decoration-orange-500"
+            className="group animate__animated animate__fadeInLeft animate__delay-3s px-8 py-4 transition-colors hover:text-orange-300 underline decoration-orange-500"
             style={{ textUnderlineOffset: '0.5em', textDecorationThickness: '0.2em'}}
           >
             <span className={`${mainFont.className} text-2xl font-semibold`}>Contact</span>
