@@ -52,12 +52,12 @@ export default function NavBar() {
           >
             <span>Press</span>
           </a>
-          {/* <a
+          <a
             href="/events"
             className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors ${path === '/events' ? 'text-amber-300' : ''} hover:text-amber-300`}
           >
             <span>Events</span>
-          </a> */}
+          </a>
           <a
             href="/contact"
             className={`${mainFont.className} lg:inline-flex lg:w-auto w-full border border-transparent px-3 py-2 rounded items-center justify-center transition-colors ${path === '/contact' ? 'text-orange-300' : ''} hover:text-orange-300`}
